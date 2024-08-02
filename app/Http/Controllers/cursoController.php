@@ -18,7 +18,7 @@ class cursoController extends Controller
                 'idade'=> 28]
         ];
         
-        return view('apresentacao', [
+        return view('curso-listagem', [
            'objetos' => $dados ]);
     }
 

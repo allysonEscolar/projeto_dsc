@@ -10,10 +10,10 @@ Route::get('/', function () {
 
 Route::get('/apresentacao-disciplina', function () {
     return view('disciplina');
-});
+}); 
 
 Route::get('/minha-rota', function () {
     return view('minhaView');
 });
 
-Route::get('/apresentacao', [CursoController::class, 'index']);
+Route::get('/curso-listagem', [CursoController::class, 'index']);
