@@ -17,3 +17,10 @@ Route::get('/minha-rota', function () {
 });
 
 Route::get('/curso-listagem', [CursoController::class, 'index']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
